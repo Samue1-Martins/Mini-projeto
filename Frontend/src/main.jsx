@@ -11,7 +11,7 @@ import SuperiorExercise from './routes/superiorExercise.jsx'
 
 const router = createBrowserRouter([
   {
-    Element: <App />,
+    element: <App />,
     children: [
       {
         path: "/",
