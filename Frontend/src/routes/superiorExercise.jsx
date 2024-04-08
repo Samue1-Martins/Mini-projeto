@@ -1,6 +1,6 @@
 import React from "react";
 
-export const SuperiorExercise = () =>{
+const SuperiorExercise = () =>{
     return <div> superiorExercise </div>
 };
 
