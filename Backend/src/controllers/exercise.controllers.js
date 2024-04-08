@@ -1,6 +1,9 @@
 import { superiorsExercise } from "../database/superiors.exercises.js";
 import { lowerExercise } from "../database/lower.exercises.js";
 
+export const getHome = async(req, res)=>{
+    return res.json('Escolha uma rota')
+}
 
 export const getAllSuperiorExercises = async(req, res)=>{
     return res.json({superiorsExercise})

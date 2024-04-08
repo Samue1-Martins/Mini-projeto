@@ -1,17 +1,13 @@
 import express from "express"
 import cors from "cors"
-import { superiorsExercise } from "./database/superiors.exercises.js";
+// import { superiorsExercise } from "./database/superiors.exercises.js";
 import { routes } from "./routes/index.routes.js";
 
 const app = express();
 
 app.use(express.json());
-app.use(cors())
+app.use(cors({ origin: '*' }));
 app.use(routes);
-
-app.get("/teste", function (req, res){
-    res.json (superiorsExercise);
-});
 
 const port = process.env.PORT || 7000;
 
