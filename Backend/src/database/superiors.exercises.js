@@ -5,6 +5,10 @@ export const superiorsExercise = {
         {id: 3, Nome:'Elevação em Y', Repetições:'3x 12 repetições'}, 
         {id: 4, Nome:'Elevação frontal alternado', Repetições: '3x 12 repetições'},
         {id: 5, Nome:'Elevação lateral', Repetições:'3x 12 repetições'}, 
-        {id: 6, Nome:'Rosca bíceps supinada', Repetições: '3x 12 repetições'}],
+        {id: 6, Nome:'Rosca bíceps supinada', Repetições: '3x 12 repetições'},
+        {id: 7, Nome:'Rosca martelo', Repetições: '3x 12 repetições'},
+        {id: 8, Nome:'Elevação frontal', Repetições: '3x 12 repetições'},
+        {id: 9, Nome:'Flexão', Repetições: '3x 12 repetições'},
+        {id: 10, Nome:'Rosca direta', Repetições: '3x 12 repetições'}],
 };
 

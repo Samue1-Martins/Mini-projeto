@@ -7,6 +7,8 @@ export const lowerExercise = {
         {id: 5, Nome:'Flexão de joelho p/ trás ', Repetições:'3x 12 repetições'}, 
         {id: 6, Nome:'Abdução', Repetições: '3x 12 repetições'},
         {id: 7, Nome:'Agachamento sumô', Repetições: '3x 12 repetições'},
-        {id: 8, Nome:'Elevação pélvica', Repetições: '3x 12 repetições'}],
+        {id: 8, Nome:'Elevação pélvica', Repetições: '3x 12 repetições'},
+        {id: 9, Nome:'Cadeira flexora', Repetições: '3x 12 repetições'},
+        {id: 10, Nome:'Agachamento búlgaro', Repetições: '3x 12 repetições'}],
 };
 

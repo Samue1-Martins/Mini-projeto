@@ -1,10 +1,6 @@
 import { superiorsExercise } from "../database/superiors.exercises.js";
 import { lowerExercise } from "../database/lower.exercises.js";
 
-export const getHome = async(req, res)=>{
-    return res.json('Escolha uma rota')
-}
-
 export const getAllSuperiorExercises = async(req, res)=>{
     return res.json({superiorsExercise})
 };
@@ -19,12 +15,12 @@ export const getAllExercises = async (req, res)=>{
 
 export const getLowerExerciseId = async (req, res)=>{
     const id = lowerExercise.exercises.find(p => p.id === parseInt(req.params.id));
-    if (!id) return res.status(404).send('Exercicio não encontrado');
+    if (!id) return res.status(404).send('exercise not found!');
     return res.json(id)
 };
 
 export const getSuperiorsExerciseId = async (req, res)=>{
     const id = superiorsExercise.exercises.find(p => p.id === parseInt(req.params.id));
-    if (!id) return res.status(404).send('Exercicio não encontrado');
+    if (!id) return res.status(404).send('exercise not found!');
     return res.json(id)
 };

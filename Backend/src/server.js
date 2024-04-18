@@ -1,6 +1,5 @@
 import express from "express"
 import cors from "cors"
-// import { superiorsExercise } from "./database/superiors.exercises.js";
 import { routes } from "./routes/index.routes.js";
 
 const app = express();

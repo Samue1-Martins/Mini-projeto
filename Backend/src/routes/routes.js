@@ -5,12 +5,10 @@ import {
     getSuperiorsExerciseId,
     getAllSuperiorExercises,
     getAllLowerExercises,
-    getHome
 } from "../controllers/exercise.controllers.js";
 
 export const exercisesRoutes = Router();
 
-exercisesRoutes.get('/', getHome)
 exercisesRoutes.get("/all-superiors-exercises", getAllSuperiorExercises);
 exercisesRoutes.get("/all-lower-exercises", getAllLowerExercises);
 exercisesRoutes.get("/all-exercises", getAllExercises);
