@@ -1,5 +1,4 @@
-export const superiorsExercise = {
-    exercises: [    
+export const superiorsExercise = [    
         {id: 1, Nome:'Superiores Remada neutra', Repetições:'3x 12 repetições'}, 
         {id: 2, Nome:'Remada pronada', Repetições: '3x 12 repetições'}, 
         {id: 3, Nome:'Elevação em Y', Repetições:'3x 12 repetições'}, 
@@ -9,6 +8,6 @@ export const superiorsExercise = {
         {id: 7, Nome:'Rosca martelo', Repetições: '3x 12 repetições'},
         {id: 8, Nome:'Elevação frontal', Repetições: '3x 12 repetições'},
         {id: 9, Nome:'Flexão', Repetições: '3x 12 repetições'},
-        {id: 10, Nome:'Rosca direta', Repetições: '3x 12 repetições'}],
-};
+        {id: 10, Nome:'Rosca direta', Repetições: '3x 12 repetições'}
+    ]
 

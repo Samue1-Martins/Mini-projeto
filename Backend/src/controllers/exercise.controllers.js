@@ -14,13 +14,13 @@ export const getAllExercises = async (req, res)=>{
 };
 
 export const getLowerExerciseId = async (req, res)=>{
-    const id = lowerExercise.exercises.find(p => p.id === parseInt(req.params.id));
+    const id = lowerExercise.find(p => p.id === parseInt(req.params.id));
     if (!id) return res.status(404).send('exercise not found!');
     return res.json(id)
 };
 
 export const getSuperiorsExerciseId = async (req, res)=>{
-    const id = superiorsExercise.exercises.find(p => p.id === parseInt(req.params.id));
+    const id = superiorsExercise.find(p => p.id === parseInt(req.params.id));
     if (!id) return res.status(404).send('exercise not found!');
     return res.json(id)
 };
