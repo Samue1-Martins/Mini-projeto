@@ -1,4 +1,4 @@
-export const lowerExercise = [
+export const lowerExercises = [
     {id: 1, Nome:'Agachamento', Repetições:'3x 12 repetições'},
     {id: 2, Nome:'Afundo', Repetições: '3x 12 repetições'}, 
     {id: 3, Nome:'Agachamento cadeirinha', Repetições:'1x 2 minutos'}, 

@@ -1,4 +1,4 @@
-export const superiorsExercise = [    
+export const superiorsExercises = [    
         {id: 1, Nome:'Superiores Remada neutra', Repetições:'3x 12 repetições'}, 
         {id: 2, Nome:'Remada pronada', Repetições: '3x 12 repetições'}, 
         {id: 3, Nome:'Elevação em Y', Repetições:'3x 12 repetições'}, 
