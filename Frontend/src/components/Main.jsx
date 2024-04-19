@@ -5,27 +5,41 @@ import './Main.css';
 
 function Main() {
 
+   
     const [ exercise, setExercise ] = useState ([])
     const [numberExercise, setExerciseNumber] = useState('')
+    const [exerciseFounded,setExerciseFounded ] = useState({})
+    
 
-    
-    
-    
-    
-    
     
     async function exerciseById(){
-        const { data } = await axios.get(`https://mini-projetom5-w86g.onrender.com/lower-exercise-Id/${numberExercise}`)
-        setExercise(data)
-        console.log(data)
+       
+        try {
+            const { data } = await axios.get(`https://mini-projetom5-w86g.onrender.com/lower-exercise-Id/${numberExercise}`)
+            setExerciseFounded(data)
+            console.log(data);        
+    
+        } catch (error) {
+          if(error.reponse.status === 404){
+            console.log('exercicio não encontrado')
+            setExerciseFounded(null)
+          }else{
+            console.log('erro ao buscar pelo id do exercicio')
+          }
+        }
+         
     }
-
-
+    
+    
     const handle = (e) =>{
         setExerciseNumber(e.target.value)
-        exerciseById()
+      
+        
     }
-
+    useEffect ( () =>{
+        exerciseById()    
+        
+    },[numberExercise])
     
     async function teste(){
         const { data } = await axios.get('https://mini-projetom5-w86g.onrender.com/all-lower-exercises')
@@ -56,7 +70,7 @@ function Main() {
                 
                 )}
 
-                <input onChange={handle} placeholder='digite o numero do exericio'/>
+                <input  onChange={handle} placeholder='digite o numero do exericio'/>
                 </div>
             </div>
         </main>
