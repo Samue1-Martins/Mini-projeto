@@ -6,11 +6,32 @@ import './Main.css';
 function Main() {
 
     const [ exercise, setExercise ] = useState ([])
+    const [numberExercise, setExerciseNumber] = useState('')
 
+    
+    
+    
+    
+    
+    
+    async function exerciseById(){
+        const { data } = await axios.get(`https://mini-projetom5-w86g.onrender.com/lower-exercise-Id/${numberExercise}`)
+        setExercise(data)
+        console.log(data)
+    }
+
+
+    const handle = (e) =>{
+        setExerciseNumber(e.target.value)
+        exerciseById()
+    }
+
+    
     async function teste(){
         const { data } = await axios.get('https://mini-projetom5-w86g.onrender.com/all-lower-exercises')
-        console.log(data)
-        setExercise(data)
+        setExercise(data.lowerExercise)
+        console.log(data.lowerExercise)
+        console.log(exercise)
     }
 
 
@@ -34,6 +55,8 @@ function Main() {
                   
                 
                 )}
+
+                <input onChange={handle} placeholder='digite o numero do exericio'/>
                 </div>
             </div>
         </main>
