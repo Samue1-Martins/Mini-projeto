@@ -5,10 +5,10 @@ import './Main.css';
 
 function Main() {
 
-    const [ exercise, setExercise ] = useState ('')
+    const [ exercise, setExercise ] = useState ([])
 
     async function teste(){
-        const { data } = await axios.get('https://mini-projetom5-w86g.onrender.com/all-exercises')
+        const { data } = await axios.get('https://mini-projetom5-w86g.onrender.com/all-lower-exercises')
         console.log(data)
         setExercise(data)
     }
@@ -24,7 +24,16 @@ function Main() {
                     <div ></div>
                 </div>
                 <div>
-                    <h2>teste</h2>
+                   {exercise.map(exercise => 
+                <div  key={exercise.id}>
+                    <h1>{exercise.Nome}</h1>
+                    <h2>{exercise.Repetições}</h2>
+
+
+                </div>
+                  
+                
+                )}
                 </div>
             </div>
         </main>
@@ -34,59 +43,3 @@ function Main() {
 export default Main
 
 
-
-
-
-
-
-
-
-
-
-
-    // const [ exerciseValue, setValue ] = useState('');
-    // const [ exercise, setExrcise ] = useState({});
-
-    // const getExercise = async (e) => {
-    //     try {
-    //         e.preventDefault()
-    //         const  data = await axios.get(`https://mini-projetom5-w86g.onrender.com/lower-exercise-Id/${exerciseValue}`)
-    //         const response = await data.json();
-    //         if (!response){
-    //             alert('Não foi possivel buscar o exercicio')
-    //         }
-    //     }
-    //     catch (error){
-    //         alert('Exercicio não encontrado')
-    //         console.log('Algo deu errado', error)
-    //     }
-    // }
-
-    // const eventHandle = (e) =>{
-    //     setValue(e.target.value)
-    // }
-
-    // return(
-    //     <>
-    //     <form onSubmit={getExercise}>
-    //         <label>
-    //             <input 
-    //                 type="text"
-    //                 onChange={eventHandle}
-    //                 placeholder='Escolha um numero de 1 a 10'
-    //             />
-    //         </label>
-
-    //         <button type='submit'>Clique para realizar a busca</button>
-    //         <h1>contador</h1>
-    //         {exercise.nome && (
-    //             <>
-    //             <h1>{exercise.nome}</h1>
-                
-    //             </>
-    //         )
-            
-    //         }
-    //     </form>
-    //     </>
-    // )
