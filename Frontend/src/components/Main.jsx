@@ -48,6 +48,12 @@ function Main() {
         console.log(exercise)
     }
 
+    // async function teste(){
+    //     const { data } = await axios.get('https://mini-projetom5-w86g.onrender.com/all-lower-exercises')
+    //     setExercise(data.lowerExercise)
+    //     console.log(data.lowerExercise)
+    //     console.log(exercise)
+    // }
 
     return (
         <main>
