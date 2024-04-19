@@ -13,10 +13,10 @@ const Navbar = () => {
             </h2>
             <ul>
                 <li>
-                    <Link to={`http://localhost:7000`}>Pernas</Link>
+                    <Link to={`https://mini-projetom5-w86g.onrender.com/all-lower-exercises`}>Pernas</Link>
                 </li>
                 <li>
-                    <Link to={`http://localhost:7000/all-superiors-exercises`} className="new-btn">teste</Link>
+                    <Link to={`https://mini-projetom5-w86g.onrender.com/all-exercises`} className="new-btn">teste</Link>
                 </li>
             </ul>
         </nav>
