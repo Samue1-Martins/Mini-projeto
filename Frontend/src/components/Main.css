@@ -1,6 +1,108 @@
 .main{
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: baseline;
     padding-top: 3rem;
+    gap: 20px;
+}
+
+.texts{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.textDiv{
+    background-image: linear-gradient( to bottom right, #3f9ffa, #76e5fc);
+    color: aliceblue;
+    border-radius: 10px;
+    padding: 1rem;
+    opacity: 0.7;
+    transition: .3s;
+    text-align: center;
+}
+
+.textDiv:hover{
+    opacity: 1;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    color: aliceblue;
+}
+
+.cardsExercises{
+    background-image: linear-gradient( to bottom right, #3f9ffa, #76e5fc);
+    border-radius: 10px;
+    width: 300px;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.inputDiv{
+    margin-top: 40px;
+}
+.inputExercise{
+    background-image: linear-gradient( to bottom right, #3f9ffa, #76e5fc);
+    border-radius: 10px;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: aliceblue;
+    padding: 1rem;
+    gap: 10px;
+}
+
+button{
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    color: aliceblue;
+    font-size: 16px;
+    background-color: #76e5fc;
+    width: 300px;
+    height: 40px;
+}
+
+button:hover{
+    transition: .3s;
+    background-color: #3f9ffa;
+}
+
+input{
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    width: 300px;
+    height: 40px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 1020px){
+    .main{
+        display: flex;
+        flex-direction: column;
+    }
+    .cards{
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .cardsExercises{
+        width: 100%;
+    }
+    
+    button{
+        width: 100%;
+    }
 }
