@@ -3,8 +3,10 @@
 
   Fique em forma até mesmo dentro de casa! <br>
   A Home Gym é um site que te retorna uma lista de exercícios físicos para fazer em casa!
-  <img src=https://github.com/Samue1-Martins/Mini-projeto/assets/125680404/e4262f1f-c37a-40bb-b1ec-ea3a9979840b height=150px >
-
+  <div>
+    <img src=https://github.com/Samue1-Martins/Mini-projeto/assets/125680404/e4262f1f-c37a-40bb-b1ec-ea3a9979840b height=150px >
+  </div>
+  
 ## Tecnologias utilizadas
 
   **Front-end:** React (18.2.0), ReactDOMRouter (6.22.3) e Axios: (1.6.8)
